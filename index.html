@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/music.css">
     <style>
-      /* CSS styles here */
       #myVideo {
          position: fixed;
          top: 0;
@@ -206,15 +205,14 @@
         const mobileSource = document.getElementById('mobileSource');
   
         function updateVideoSource() {
-          if (window.innerWidth <= 768) { // Kiểm tra nếu chiều rộng màn hình nhỏ hơn hoặc bằng 768px (thường là điện thoại)
+          if (window.innerWidth <= 768) { 
             video.src = mobileSource.src;
           } else {
             video.src = desktopSource.src;
           }
-          video.load(); // Tải lại video với nguồn mới
+          video.load(); 
         }
   
-        // Gọi hàm khi trang được tải và khi cửa sổ được thay đổi kích thước
         updateVideoSource();
         window.addEventListener('resize', updateVideoSource);
       });
