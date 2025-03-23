@@ -70,7 +70,7 @@ body {
 }
 
 .profile .header .title {
-  color: #fff;
+  color: #000000;
   font-size: 17px;
   padding: 2px;
   line-height: 25px;
@@ -80,7 +80,7 @@ body {
 }
 
 .profile .header .slogan {
-  color: #fff;
+  color: #ffffff;
   font-size: 15px;
   opacity: 0.8;
   font-weight: 500;
@@ -89,14 +89,40 @@ body {
 
 .profile .header .email {
   font-family: 'Roboto', sans-serif;
-  color: #fff;
+  color: #000000;
+  font-size: 15px;
+  opacity: 0.8;
+  font-weight: bold;
+  font-family: sans-serif;
+  padding: 3px;
+}
+
+.profile .header .dob {
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
   font-size: 15px;
   opacity: 0.8;
   font-weight: 500;
   font-family: sans-serif;
   padding: 3px;
 }
-
+@media only screen and (max-width: 768px) {
+  .profile .header .title,
+  .profile .header .slogan,
+  .profile .header .email,
+  .profile .header .dob {
+    color: white !important;
+  }
+}
+#myVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
 .profile .social__media {
   width: 100%;
   display: -webkit-box;
